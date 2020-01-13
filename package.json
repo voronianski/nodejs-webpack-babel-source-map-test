@@ -1,0 +1,21 @@
+{
+  "name": "test-source-map",
+  "version": "1.0.0",
+  "main": "test-source-map.js",
+  "dependencies": {
+    "@babel/core": "^7.8.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-latest-node": "^4.0.1",
+    "nodemon-webpack-plugin": "^4.2.2",
+    "source-map": "^0.7.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "scripts": {
+    "build": "npm run build:no-babel && npm run build:with-babel",
+    "build:no-babel": "webpack --env=production --config ./webpack.config.no-babel",
+    "build:with-babel": "webpack --env=production --config ./webpack.config.with-babel"
+  },
+  "license": "MIT"
+}
