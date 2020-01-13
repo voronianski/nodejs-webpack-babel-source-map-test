@@ -4,7 +4,7 @@
 
 ```bash
 npm i
-npm build
+npm run build
 npm test
 
 # output has wrong position in with-babel version
