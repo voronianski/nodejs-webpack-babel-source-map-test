@@ -1,7 +1,7 @@
 {
-  "name": "test-source-map",
+  "name": "nodejs-webpack-babel-source-map-test",
   "version": "1.0.0",
-  "main": "test-source-map.js",
+  "main": "./test.js",
   "dependencies": {
     "@babel/core": "^7.8.0",
     "babel-loader": "^8.0.6",
@@ -15,7 +15,8 @@
   "scripts": {
     "build": "npm run build:no-babel && npm run build:with-babel",
     "build:no-babel": "webpack --env=production --config ./webpack.config.no-babel",
-    "build:with-babel": "webpack --env=production --config ./webpack.config.with-babel"
+    "build:with-babel": "webpack --env=production --config ./webpack.config.with-babel",
+    "test": "node ./test.js"
   },
   "license": "MIT"
 }
